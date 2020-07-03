@@ -1,0 +1,3 @@
+deb_package/usr/share/digital-simulator/Digital.jar
+deb_package/usr/share/digital-simulator/examples/
+*.deb

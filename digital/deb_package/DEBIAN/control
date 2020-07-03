@@ -1,0 +1,11 @@
+Package: digital-simulator
+Version: 0.24
+Installed-Size: 11269
+Maintainer: ailtonbsj <ailton.ifce@gmail.com>
+Section: science
+Architecture: all
+Priority: optional
+Depends: default-jre
+Homepage: https://github.com/hneemann/Digital
+Description: A digital logic designer and circuit simulator.
+ Digital is a easy-to-use digital logic designer and circuit simulator designed for educational purposes.

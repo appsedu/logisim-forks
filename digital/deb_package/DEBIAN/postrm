@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cat /etc/passwd | grep '/home/' | \
+grep -v 'cups\|syslog' | cut -d ':' -f 1 > /tmp/homes.list
+
+while read USUARIO; do
+	runuser -l $USUARIO -c "rm -rf /home/$USUARIO/Digital\\ Examples"
+done < /tmp/homes.list
+rm -rf /etc/skel/Digital\ Examples

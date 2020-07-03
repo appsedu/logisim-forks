@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Digital
+Comment=A digital logic designer and circuit simulator
+Exec=digital-simulator
+Icon=digital-icon-128.png
+Terminal=false
+Type=Application
+Categories=Education;Science;ComputerScience;Java;

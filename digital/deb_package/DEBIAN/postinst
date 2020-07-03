@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cat /etc/passwd | grep '/home/' | \
+grep -v 'cups\|syslog' | cut -d ':' -f 1 > /tmp/homes.list
+
+while read USUARIO; do
+	runuser -l $USUARIO -c "ln -s /usr/share/digital-simulator/examples /home/$USUARIO/Digital\\ Examples"
+done < /tmp/homes.list
+ln -s /usr/share/digital-simulator/examples /etc/skel/Digital\ Examples
